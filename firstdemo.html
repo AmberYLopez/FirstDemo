@@ -1,0 +1,16 @@
+<script>
+	/*alert("hello.github!");
+	alert("hello,AmberYLpoez");
+	*/
+	function separate(str){
+		str += '';
+		var patten = /^(\+|-)?(\d+)(\d{3})/;
+		while(patten.test(str)){
+				str = str.replace(patten,'$1$2,$3');
+		}
+		return str;
+	}
+	var res = separate(123456789);
+	alert(res);
+	
+</script>
